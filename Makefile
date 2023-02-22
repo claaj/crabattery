@@ -28,15 +28,14 @@ install:
 	@cp resources/$(DBUS_CONF) $(DBUS_DIR)
 	@cp $(BUILD_DIR)$(BIN_CLIENT) $(BIN_DIR)
 	@cp $(BUILD_DIR)$(BIN_SERVER) $(BIN_DIR)
-	systemctl enable --now $(SERVICE)
+	@systemctl enable --now $(SERVICE)
 
 uninstall:
-	systemctl disable --now $(SERVICE)
+	@systemctl disable --now $(SERVICE)
 	@rm -f $(SERVICE_DIR)$(SERVICE)
 	@rm -f $(DBUS_DIR)$(DBUS_CONF)
 	@rm -f $(BIN_DIR)$(BIN_CLIENT)
 	@rm -f $(BIN_DIR)$(BIN_SERVER)
-	@rm -f $(LIMIT_DIR)$(LIMIT_FILE)
-	@rmdir $(LIMIT_DIR)
+	@rm -fr $(LIMIT_DIR)
 
 reinstall: uninstall install
