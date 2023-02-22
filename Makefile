@@ -1,7 +1,7 @@
 # Rusttery
 # @version 0.1.0
 
-#files/path vars
+#files vars
 BIN_CLIENT=rusttery
 BIN_SERVER=rusttery-server
 SERVICE=rusttery.service
@@ -32,3 +32,5 @@ uninstall:
 	@rm -f $(DBUS_DIR)$(DBUS_CONF)
 	@rm -f $(BIN_DIR)$(BIN_CLIENT)
 	@rm -f $(BIN_DIR)$(BIN_SERVER)
+
+reinstall: uninstall install
