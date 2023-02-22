@@ -37,9 +37,9 @@ fn connection(mode: Mode) {
 
     let rt = tokio::runtime::Runtime::new().unwrap();
     rt.block_on(async {
-        let connection = Connection::system().await.unwrap();
-        let proxy = LimiterProxy::new(&connection).await.unwrap();
-        let reply = proxy.set_battery_limit(limit, mode).await.unwrap();
-        println!("{}", reply);
+        let _rusttery_connection = Connection::system().await.unwrap();
+        let rusttery_proxy = LimiterProxy::new(&_rusttery_connection).await.unwrap();
+        let rusttery_reply = rusttery_proxy.set_battery_limit(limit, mode).await.unwrap();
+        println!("{}", rusttery_reply);
     });
 }
