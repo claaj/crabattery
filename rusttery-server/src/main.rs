@@ -23,7 +23,7 @@ impl Limiter {
                 format!("✅ {} mode activated! Limit set to: {}%.", mode, limit)
             },
             Ok(status) if status.status.success() && write_result.is_err() => {
-                format!("✅ {} mode activated! Limit set to: {}%.\n⚠️Limit will reset after reboot.", mode, limit)
+                format!("✅ {} mode activated! Limit set to: {}%.\n🚨 Limit will reset after reboot.", mode, limit)
             },
             Err(err) => {
                 format!("❌ Failed to activate {} mode. Err: {}", mode, err)
