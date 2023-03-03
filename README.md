@@ -75,4 +75,4 @@ sudo make uninstall
 
 
 
-> This program is tested in an ASUS X515 laptop running Fedora 37 and Sway.
+> This program is being tested in an ASUS X515 laptop running Fedora 38 and Sway.
