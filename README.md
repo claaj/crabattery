@@ -1,6 +1,6 @@
 # Rusttery
 
-Rust  :crab: + Battery :battery: = Rusttery
+Rust :crab: + Battery :battery: = Rusttery
 
 Program to control battery charge threshold for Linux.
 
@@ -14,7 +14,7 @@ Program to control battery charge threshold for Linux.
 
 ## :warning: IMPORTANT :warning:
 
-Due to battery model diversity is possible that this program doesn´t work in your hardware.
+Due to battery model diversity is possible that this program doesn´t work on your hardware.
 
 At the moment of writing this, `Rusttery` can set threshold to batteries that have name syntax like `BAT[number]`. 
 
@@ -41,7 +41,7 @@ First clone this repo and then cd into it.
 git clone https://github.com/claaj/rusttery && cd rusttery
 ```
 
-Now build the binaries (remember that `make` `cargo` are required):
+Now build the binaries (remember that `make` and `cargo` are required):
 
 ```shell
 make build
@@ -76,4 +76,4 @@ sudo make uninstall
 
 
 
-> This program is being tested in an ASUS X515 laptop running Fedora 38 and Sway.
+> This program is being tested on ASUS X515 laptop running Fedora 37 and Sway.
