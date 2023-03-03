@@ -58,6 +58,7 @@ Finally to run the app, you can type:
 ```shell
 rusttery
 ```
+![clip](https://user-images.githubusercontent.com/102485147/222772106-1bfe555a-785d-45bd-aa03-b893feff17ef.gif)
 
 ## Uninstall
 
