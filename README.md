@@ -1,6 +1,6 @@
 # Crabattery
 
-Rust :crab: + Battery :battery: = Crabattery
+Crab :crab: + Battery :battery: = Crabattery
 
 Program to control battery charge threshold for Linux.
 
@@ -58,7 +58,8 @@ Finally to run the app, you can type:
 ```shell
 crabattery
 ```
-![clip](https://user-images.githubusercontent.com/102485147/222772106-1bfe555a-785d-45bd-aa03-b893feff17ef.gif)
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/102485147/231053045-3f0bd1f6-312f-4bee-bb6c-5373ae9a40b5.gif)
 
 ## Uninstall
 
@@ -73,7 +74,4 @@ Then run:
 ```shell
 sudo make uninstall
 ```
-
-
-
-> This program is being tested on ASUS X515 laptop running Fedora 37 and Sway.
+> This program is being tested on ASUS X515 laptop running Fedora 37.
