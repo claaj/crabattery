@@ -1,19 +1,19 @@
-# Rusttery
+# Crabattery
 # @version 0.1.0
 
 #files vars
-BIN_CLIENT=rusttery
-BIN_SERVER=rusttery-server
-SERVICE=rusttery.service
-DBUS_CONF=ar.claaj.Rusttery.conf
-LIMIT_FILE=rusttery.limit
+BIN_CLIENT=crabattery
+BIN_SERVER=crabattery-server
+SERVICE=crabattery.service
+DBUS_CONF=ar.claaj.Crabattery.conf
+LIMIT_FILE=crabattery.limit
 
 #dirs vars
 BUILD_DIR=target/debug/
 SERVICE_DIR=/usr/lib/systemd/system/
 DBUS_DIR=/usr/share/dbus-1/system.d/
 BIN_DIR=/usr/bin/
-LIMIT_DIR=/etc/rusttery/
+LIMIT_DIR=/etc/crabattery/
 
 build:
 	@cargo build

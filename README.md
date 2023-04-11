@@ -1,6 +1,6 @@
-# Rusttery
+# Crabattery
 
-Rust :crab: + Battery :battery: = Rusttery
+Rust :crab: + Battery :battery: = Crabattery
 
 Program to control battery charge threshold for Linux.
 
@@ -16,7 +16,7 @@ Program to control battery charge threshold for Linux.
 
 Due to battery model diversity is possible that this program doesn´t work on your hardware.
 
-At the moment of writing this, `Rusttery` can set threshold to batteries that have name syntax like `BAT[number]`. 
+At the moment of writing this, `Crabattery` can set threshold to batteries that have name syntax like `BAT[number]`. 
 
 For example: `BAT0` (it seems the most common).
 
@@ -38,7 +38,7 @@ AC0  BAT0
 First clone this repo and then cd into it.
 
 ```shell
-git clone https://github.com/claaj/rusttery && cd rusttery
+git clone https://github.com/claaj/crabattery && cd crabattery
 ```
 
 Now build the binaries (remember that `make` and `cargo` are required):
@@ -56,7 +56,7 @@ sudo make install
 Finally to run the app, you can type:
 
 ```shell
-rusttery
+crabattery
 ```
 ![clip](https://user-images.githubusercontent.com/102485147/222772106-1bfe555a-785d-45bd-aa03-b893feff17ef.gif)
 
@@ -65,7 +65,7 @@ rusttery
 To uninstall cd into the repo, wherever is located:
 
 ```shell
-cd path/to/rusttery-repo
+cd path/to/crabattery-repo
 ```
 
 Then run:

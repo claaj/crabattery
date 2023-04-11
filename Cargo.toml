@@ -1,6 +1,6 @@
 [workspace]
 
 members = [
-  "rusttery",
-  "rusttery-server"
+  "crabattery",
+  "crabattery-server"
 ]

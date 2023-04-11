@@ -4,12 +4,12 @@ use tokio::{time::{sleep, Duration},
             fs::{read_to_string, write}};
 use zbus::{dbus_interface, ConnectionBuilder};
 
-const LIMIT_PATH :&str = "/etc/rusttery";
-const LIMIT_FILE :&str = "rusttery.limit";
+const LIMIT_PATH :&str = "/etc/crabattery";
+const LIMIT_FILE :&str = "crabattery.limit";
 
 struct Limiter;
 
-#[dbus_interface(name = "ar.claaj.Rusttery.Limiter")]
+#[dbus_interface(name = "ar.claaj.Crabattery.Limiter")]
 impl Limiter {
     async fn set_battery_limit(&self, limit: u8, mode: &str) -> String {
         let write_result = write_limit_to_file(limit).await;
@@ -37,9 +37,9 @@ impl Limiter {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
-    let _rusttery_connection = ConnectionBuilder::system()?
-        .name("ar.claaj.Rusttery")?
-        .serve_at("/ar/claaj/Rusttery", Limiter)?
+    let _crabattery_connection = ConnectionBuilder::system()?
+        .name("ar.claaj.Crabattery")?
+        .serve_at("/ar/claaj/Crabattery", Limiter)?
         .build()
         .await?;
 

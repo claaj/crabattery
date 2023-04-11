@@ -8,9 +8,9 @@ enum Mode {
 }
 
 #[dbus_proxy(
-    interface = "ar.claaj.Rusttery.Limiter",
-    default_service = "ar.claaj.Rusttery",
-    default_path = "/ar/claaj/Rusttery"
+    interface = "ar.claaj.Crabattery.Limiter",
+    default_service = "ar.claaj.Crabattery",
+    default_path = "/ar/claaj/Crabattery"
 )]
 trait Limiter {
     async fn set_battery_limit(&self, limit: u8, mode: &str) -> Result<String>;
@@ -25,7 +25,7 @@ fn main() {
         MenuOption::new("Full Capacity Mode", || connection(Mode::Full)).hint("Full charge."),
     ]);
 
-    menu.title("Rusttery - Charging Limiter🔋🔌").show();
+    menu.title("Crabattery - Charging Limiter🔋🔌").show();
 }
 
 fn connection(mode: Mode) {
@@ -37,9 +37,9 @@ fn connection(mode: Mode) {
 
     let rt = tokio::runtime::Runtime::new().unwrap();
     rt.block_on(async {
-        let _rusttery_connection = Connection::system().await.unwrap();
-        let rusttery_proxy = LimiterProxy::new(&_rusttery_connection).await.unwrap();
-        let rusttery_reply = rusttery_proxy.set_battery_limit(limit, mode).await.unwrap();
-        println!("{}", rusttery_reply);
+        let _crabattery_connection = Connection::system().await.unwrap();
+        let crabattery_proxy = LimiterProxy::new(&_crabattery_connection).await.unwrap();
+        let crabattery_reply = crabattery_proxy.set_battery_limit(limit, mode).await.unwrap();
+        println!("{}", crabattery_reply);
     });
 }

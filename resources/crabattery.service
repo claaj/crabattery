@@ -1,0 +1,11 @@
+[Unit]
+Description=Battery charging limiter
+After=multi-user.target
+
+[Service]
+Type=dbus
+BusName=ar.claaj.Crabattery
+ExecStart=/usr/bin/crabattery-server
+
+[Install]
+WantedBy=multi-user.target
