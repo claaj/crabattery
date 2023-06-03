@@ -9,7 +9,7 @@ DBUS_CONF=ar.claaj.Crabattery.conf
 LIMIT_FILE=crabattery.limit
 
 #dirs vars
-BUILD_DIR=target/debug/
+BUILD_DIR=target/release/
 SERVICE_DIR=/usr/lib/systemd/system/
 DBUS_DIR=/usr/share/dbus-1/system.d/
 BIN_DIR=/usr/bin/
